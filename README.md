@@ -3,6 +3,8 @@ A shell script to make finding your Steam Screenshots on Linux less difficult.
 
 ![Showcase Image](./showcase.png)
 
+Credit to [Zee66 on DeviantArt For the pony in the Terminal Background](https://www.deviantart.com/zee66/art/Terminal-Pony-2-384706996). This has nothing  to do with the project, but I felt it was important to credit art in the screencap.
+
 ## What Does This Do?
 When run, **Steam Screenshot Linker** will create symbolic links for each of your games with screenhots under `~/Pictures/Screenshots/Steam/INSERT_GAME_HERE`
 
