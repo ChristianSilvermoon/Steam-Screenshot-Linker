@@ -1,6 +1,8 @@
 # Steam Screenshot Linker
 A shell script to make finding your Steam Screenshots on Linux less difficult.
 
+![Showcase Image](./showcase.png)
+
 ## What Does This Do?
 When run, **Steam Screenshot Linker** will create symbolic links for each of your games with screenhots under `~/Pictures/Screenshots/Steam/INSERT_GAME_HERE`
 
