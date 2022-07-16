@@ -1,5 +1,5 @@
 #!/bin/bash
-declare -r VERSION="22.7.15"
+declare -r VERSION="22.7.15b"
 shopt -s checkwinsize && (: )
 
 # XDG Directories
@@ -272,11 +272,13 @@ main() {
 	
 	# If we have no Steam UID from arguments...
 	if [ ! "$STEAM_UID" ]; then
-		read_config || prompt_id
-
-		if [ "$?" != "0" ]; then
-			err "No valid Steam UID"
-			exit 1
+		if ! read_config; then
+			if [ -t 1 ]; then
+				prompt_id
+			else
+				err "No valid Steam UID"
+				exit 1
+			fi
 		fi
 
 		save_config
